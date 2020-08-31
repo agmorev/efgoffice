@@ -1,0 +1,16 @@
+{% extends "admin/base.html" %}
+{% load i18n static %}
+
+{% block title %}{{ title }} | {% trans "eFG Office" %}{% endblock %}
+{% block extrastyle %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/admin_color.css" %}"/>
+{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name">
+        <img src="{% static 'img/logo1.png' %}" alt='ПТ "ПЕНТАДА-ТРАНС"' width=50px/>
+        <b>{% trans "eFG OFFICE" %}</b>
+    </h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
