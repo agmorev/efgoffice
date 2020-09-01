@@ -30,6 +30,10 @@ class Company(models.Model):
         blank_label=_('Оберіть країну...'),
         blank=True)
 
+    class Meta:
+        verbose_name = _('компанія')
+        verbose_name_plural = _('компанії')
+
     def __str__(self):
         return self.name
 
